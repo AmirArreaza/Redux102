@@ -1,12 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import './Person.css';
+import "./Person.css";
 
-const person = (props) => (
+const person = (props) => {
+  return (
     <div className="Person" onClick={props.clicked}>
-        <h1>{props.name}</h1>
-        <p>Age: {props.age}</p>
+      <h1>{props.name}</h1>
+      <p>Age: {props.age}</p>
     </div>
-);
+  );
+};
 
 export default person;
