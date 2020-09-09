@@ -8,14 +8,6 @@ import * as actionTypes from '../reducers/actions';
 
 class Persons extends Component {
 
-  personDeletedHandler = (personId) => {
-    this.setState((prevState) => {
-      return {
-        persons: prevState.persons.filter((person) => person.id !== personId),
-      };
-    });
-  };
-
   render() {
     return (
       <div>
